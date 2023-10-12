@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Learn Forms</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+    <title>Register</title>
 </head>
 <body>
-   <form action="../HTML/index.html" method="get">
 
-    <div>
-        <label for="user name">User Name</label>
-        <input type="text" id="user name" name="User_Name" maxlength="20" required>
+    <div class="searchbox">
+       <label for="">Enter your favorite cricket player:</label>
+            
+            <input type="search" id="favCktPlayer" list="CktPlayers">  
+            <datalist id="CktPlayers">  
+            <option value="Sachin Tendulkar">  
+            <option value="Brian Lara">  
+            <option value="Jacques Kallis">   
+            <option value="Ricky Ponting">   
+            <option value="Rahul Dravid">   
+            <option value="Shane Warne">   
+            <option value="Rohit Sharma">   
+            <option value="Donald Bradman">   
+            <option value="Saurav Ganguly ">   
+            <option value="AB diVilliers">   
+            <option value="Mahendra Singh Dhoni">   
+            <option value="Adam Gilchrist">  
+            </datalist>  
+           
     </div>
 
-   <div>
-    <label for="password">Password</label>
-    <input type="password" id="password" name="Password" required minlength="6" maxlength="12">
-   </div>
+    <div class="container">
+        <form action="" id="form" method="post">
+            <h1>Register</h1>
+            <div class="input-group ">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                <span class="error"></span>
+            </div>
+            <div class="input-group  ">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" >
+                <span class="error">    </span>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <span class="error"></span>
+            </div>
+            <div class="input-group">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword">
+                <span class="error"></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
 
-   <div>
-    <label for="email">Email</label>
-    <input type="email" name="Email-Id" id="email" required maxlength="30" >
-   </div>
-   <button type="submit">Login</button>
-    
-    
 
-   </form>
-   
-
-   
+  
 
 </body>
 </html>
