@@ -96,7 +96,7 @@ time{
     #title{
     padding: 25px 0px 0px 20px;
     width: 100px;
-    text-align: center;
+    margin: auto;
     box-shadow: 1px 0px 10px rgb(255, 255, 255);
 }
 
