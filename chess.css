@@ -1,0 +1,38 @@
+
+table{
+    /* border-radius: 10px; */
+    border-collapse: collapse;
+    margin: auto;
+}
+.replace tr{
+    display: block;
+}
+.replace{
+    position: relative;
+    top: 320px;
+    left: -400px;
+}
+.replace_white{
+    position: relative;
+    top: -300px;
+    left: 400px;
+}
+
+td{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+}
+table{
+    box-shadow: 5px 5px 20px rgb(233, 187, 187),
+                -5px -5px 20px rgb(160, 160, 186);
+}
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd)
+{
+    background-color: rgb(233, 176, 176);
+}
+
+
+
